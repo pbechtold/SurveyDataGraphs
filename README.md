@@ -19,7 +19,7 @@ Following features are integrated:
 
 ## Installation
 
-Start at your ILIAS root directory
+Start at your ILIAS root directory:
 
 ```bash
 mkdir -p Customizing/global/plugins/Services/COPage/PageComponent/
@@ -29,14 +29,16 @@ git clone https://github.com/kpgilias/SurveyDataGraphs.git
 
 ### Composer
 
+After that, the composer dependencies need to be installed:
+
 ```bash
 cd Customizing/global/plugins/Services/COPage/PageComponent/SurveyDataGraphs
 composer install --no-dev
 ```
-
 For development use '--no-dev' command
+This step must also be done after an update.
 
-Install and activate the plugin in the ILIAS Plugin Administration.
+Install, activate the plugin in the ILIAS Plugin Administration.
 
 ## Maintenance
 
