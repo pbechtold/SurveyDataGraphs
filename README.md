@@ -35,7 +35,7 @@ After that, the composer dependencies need to be installed:
 cd Customizing/global/plugins/Services/COPage/PageComponent/SurveyDataGraphs
 composer install --no-dev
 ```
-For development use '--no-dev' command
+For development, omit the --no-dev command. 
 This step must also be done after an update.
 
 Install, activate the plugin in the ILIAS Plugin Administration.
