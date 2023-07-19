@@ -24,7 +24,7 @@ Start at your ILIAS root directory:
 ```bash
 mkdir -p Customizing/global/plugins/Services/COPage/PageComponent/
 cd Customizing/global/plugins/Services/COPage/PageComponent/
-git clone https://github.com/kpgilias/SurveyDataGraphs.git
+git clone https://github.com/kroepelin-projekte/SurveyDataGraphs.git
 ```
 
 ### Composer
