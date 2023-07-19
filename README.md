@@ -1,5 +1,7 @@
 [![Minimum PHP Version](https://img.shields.io/badge/php->=8.0-8892BF.svg)](https://php.net/)
+
 # SurveyDataGraphs
+
 ILIAS plugin for display competency-based survey evaluations.
 
 Following features are integrated:
@@ -9,9 +11,13 @@ Following features are integrated:
   * Multi Svy Evaluation (Line-Chart)
 * Table representation of individual competence levels including learning materials recommendation
 
+## Requirements
+
 ### (* ILIAS 8.0 - 8.999)
 
 #### (* PHP >=8.0)
+
+## Installation
 
 Start at your ILIAS root directory
 
@@ -20,9 +26,19 @@ mkdir -p Customizing/global/plugins/Services/COPage/PageComponent/
 cd Customizing/global/plugins/Services/COPage/PageComponent/
 git clone https://github.com/kpgilias/SurveyDataGraphs.git
 ```
-Install, activate the plugin in the ILIAS Plugin Administration
+
+### Composer
+
+```bash
+cd Customizing/global/plugins/Services/COPage/PageComponent/SurveyDataGraphs
+composer install --no-dev
+```
+
+For development use '--no-dev' command
+
+Install and activate the plugin in the ILIAS Plugin Administration.
 
 ## Maintenance
-Kröpelin Projekt Gmbh, support@kroepelin-projekte.de
 
+Kröpelin Projekt Gmbh, support@kroepelin-projekte.de
 This project is maintained by Kröpelin Projekt Gmbh (kpg), DE-Berlin (https://kroepelin-projekte.de). 
