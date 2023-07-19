@@ -1,0 +1,33 @@
+{
+  "name": "kpg/surveydatagraphs",
+  "description": "SurveyDataGraphs",
+  "type": "project",
+  "keywords": [
+    "kpg",
+    "surveydatagraphs",
+    "ilias",
+    "plugin"
+  ],
+  "homepage": "https://kroepelin-projekte.de",
+  "license": "",
+  "authors": [
+    {
+      "name": "kroepelin projekt gmbh",
+      "email": "support@kroepelin-projekte.de",
+      "homepage": "https://kroepelin-projekte.de",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "./classes/"
+    ]
+  },
+  "require": {
+  },
+  "config": {
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}

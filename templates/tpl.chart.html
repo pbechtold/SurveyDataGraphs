@@ -1,0 +1,78 @@
+<canvas class="sdg-chart-canvas" id="{CHARTID}" aria-label="survey-data-chart" role="img">
+    <p>Your browser does not support the canvas element.</p>
+</canvas>
+<script src="Customizing/global/plugins/Services/COPage/PageComponent/SurveyDataGraphs/js/chart.min.js"></script>
+<script>
+	new Chart(document.getElementById("{CHARTID}"), {
+		type: '{CHART_TYPE}',
+		data: {
+			labels: {SVY_RUNS},
+                datasets: [
+                  <!-- BEGIN CHART_DATASET -->
+                  {
+                    label: '{CHART_DS_LABEL}',
+                    data: [{CHART_DS_DATA}],
+                    borderColor: '{CHART_DS_BORDER_COLOR}',
+                    backgroundColor: '{CHART_DS_BACKGROUND_COLOR}',
+                    borderWidth: 2,
+                    hidden: '{HIDDEN_DATA_LABEL}'
+                  },
+                  <!-- END CHART_DATASET -->
+          ]
+        },
+        options: {
+            indexAxis: '{INDEX_AXIS}',
+            elements: {
+                bar: { borderWidth: {CHART_DS_BORDER}},
+                line:{ borderWidth: {CHART_DS_BORDER}},
+            },
+            scales: {
+                y: {
+                    min: {CHART_Y_SCALE_MIN},
+                    max: {CHART_Y_SCALE_MAX},
+                    title: {
+                        display: true,
+                        text: '{CHART_Y_SCALE_TITLE}',
+                    },
+                    offset: true,
+                    ticks: {
+                        stepSize: 1
+                    }
+                },
+                x: {
+                    min: {CHART_X_SCALE_MIN},
+                    max: {CHART_X_SCALE_MAX},
+                    title: {
+                        display: true,
+                        text: '{CHART_X_SCALE_TITLE}',
+                    },
+                    ticks: {
+                        stepSize: 1
+                    }
+                },
+            },
+            interaction: {
+                intersect: false,
+                mode: 'point',
+            },
+            responsive: true,
+            plugins: {
+                customCanvasBackgroundColor: {
+                            color: '{CHART_BACKGROUND_COLOR}',
+                        },
+                legend: {
+                    display: '{LEGEND_DISPLAY}',
+                    text: 'Legende',
+                    position: 'bottom',
+                    labels: {
+                        color: 'rgb(0, 0, 0)'
+                    },
+                },
+                title: {
+                    display: true,
+                    text: '{CHART_TITLE}',
+                },
+            }
+        },
+    });
+</script>

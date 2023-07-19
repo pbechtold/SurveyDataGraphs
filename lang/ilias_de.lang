@@ -1,0 +1,59 @@
+cmd_config_modified#:#Die Einstellungen wurden gespeichert.
+property#:#Eigenschaften
+msg_obj_modified#:#Objekt modifiziert
+edit_conf_form_header#:#Einstellungen
+cmd_insert#:#SurveyDataGraphs einfügen
+update#:#Update
+create#:#Update
+cancel#:#Update
+edit#:#Editieren
+save#:#Speichern
+mode#:#Modus
+edit_conf_si_proc_limit#:#Bearbeitungsgrenze
+edit_conf_si_proc_limit_info#:#Bearbeitungsgrenze Umfrage
+edit_conf_si_object_selection#:#Auswahl
+settings_1#:#Einstellungen
+settings_2#:#Darstellung
+edit_ex_el#:#Editor
+sile#:#Single
+simo#:#Multi
+content_plugin_version#:#Plugin Version
+single_si_config#:#Single Selection
+multi_si_config#:#Multi Selection
+sub_tab_id#:#SI Konfiguration
+config_form_description#:#Umfragen Objekt Auswahl für die SIMo/SILe Evaluation.
+config_section_header_single_si#:#SIMo Objekt
+config_section_header_single_si_info#:#SIMo Objekt Auswahl.
+config_section_header_multi_si#:#SILe Objekt
+config_section_header_multi_si_info#:#SILe Objekt Auswahl.
+edit_conf_svy_selection_title#:#Durchlauf
+result_list_header#:#Ergebnisse
+si_result_id_header#:#Durchlauf
+si_result_date_header#:#Datum
+si_result_answered_header#:#Fragen
+edit_conf_svy_selection#:#Umfragen Ref-Ids
+edit_conf_svy_selection_info#:#Legt die Reihenfolge der Durchläufe fest. Bei Angabe einer Ref-Id wird ein Balkendiagramm erzeugt, bei der Angabe mehrerer Ref-Ids wird ein Linien-Diagramm erzeugt.
+recommended_content#:#Empfohlene Lernmaterialien
+level_of_competence#:#Kompetenzausprägung
+color_form_header#:#Darstellung
+color_form_description#:#Texteingabe (Überschriften/Platzhalter) und Farbauswahl
+form_text_section_title#:#Text Einstellungen
+form_text_section_info#:#Texteingabe (Überschriften/Platzhalter)
+view_parent_title#:#Überschrift
+view_parent_title_info#:#Texteingabe wird oberhalb des Objekt-Containers angezeigt
+view_diagram_title#:#Diagramm Überschrift
+view_diagram_title_info#:#Texteingabe wird oberhalb des Diagramm angezeigt
+view_access_placeholder#:#Platzhalter
+view_access_placeholder_info#:#Texteingabe wird innerhalb des Platzhalter-Containers angezeigt
+form_color_section_header#:#Farbauswahl
+form_color_section_header_info#:#Farbauswahl der einzelnen Kompetenz
+view_scale_setting_header#:#Graph-Skalierung
+view_scale_setting_header_info#:#Ändert die Skalierung der Werte der X- bzw. Y-Achse des Graphs
+view_scale_setting_group#:#Darstellung der Graph-Skalierung
+view_scale_setting_option_level#:#Darstellung Level
+view_scale_setting_option_points#:#Darstellung Punkte pro Antwort
+view_scale_setting_option_points_total#:#Darstellung Punkte
+view_hidden_legend_level#:#Sichtbarkeit Ausprägung
+view_hidden_legend_level_info#:#Anzahl der dargestellten Kompetenzen innerhalb des Graphs sowie der Graph-Legende
+x_scale_title#:#Titel der x-Achse
+y_scale_title#:#Titel der y-Achse

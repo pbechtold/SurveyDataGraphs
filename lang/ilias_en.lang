@@ -1,0 +1,59 @@
+cmd_config_modified#:#Modifications saved.
+property#:#Properties
+msg_obj_modified#:#Object modified
+edit_conf_form_header#:#Settings
+cmd_insert#:#Insert SurveyDataGraphs
+update#:#Update
+create#:#Create
+cancel#:#Cancel
+edit#:#Edit
+save#:#Save
+mode#:#Mode
+edit_conf_si_proc_limit#:#Process Limit
+edit_conf_si_proc_limit_info#:#Survey Processing Limit
+edit_conf_si_object_selection#:#Selection
+settings_1#:#Settings
+settings_2#:#Style Settings
+edit_ex_el#:#Edit Element
+sile#:#Single
+simo#:#Multi
+content_plugin_version#:#Plugin Version
+single_si_config#:#Single Selection
+multi_si_config#:#Multi Selection
+sub_tab_id#:#SI Configuration
+config_form_description#:#Survey Input Object Selection for SIMo/SILe Evaluation.
+config_section_header_single_si#:#SIMo Object
+config_section_header_single_si_info#:#SIMo Object Selection.
+config_section_header_multi_si#:#SILe Object
+config_section_header_multi_si_info#:#SILe Object Selection.
+edit_conf_svy_selection_title#:#Run
+result_list_header#:#Results
+si_result_id_header#:#Run
+si_result_date_header#:#Date
+si_result_answered_header#:#Questions
+edit_conf_svy_selection#:#Survey Ref-Ids
+edit_conf_svy_selection_info#:#Determines the order of the runs. If a ref-id is specified, a bar chart is generated, if several ref-ids are specified, a line chart is generated.
+recommended_content#:#Recommended Material
+level_of_competence#:#Level of Competence
+color_form_header#:#Presentation
+color_form_description#:#Text input (headings/placeholders) and color selection
+form_text_section_title#:#Text Settings
+form_text_section_info#:#Text input (headings/placeholders)
+view_parent_title#:#Headline
+view_parent_title_info#:#Text input is displayed above the object container
+view_diagram_title#:#Headline Chart
+view_diagram_title_info#:#Text entry is displayed above the chart
+view_access_placeholder#:#Placeholder
+view_access_placeholder_info#:#Text input is displayed inside the placeholder container
+form_color_section_header#:#Color Selection
+form_color_section_header_info#:#Color selection of the individual competencies
+view_scale_setting_header#:#Graph Scaling
+view_scale_setting_header_info#:#Changes the scale of the X and Y axis values of the graph
+view_scale_setting_group#:#Graph scaling representation
+view_scale_setting_option_level#:#Display in levels
+view_scale_setting_option_points#:#Display points per answer
+view_scale_setting_option_points_total#:#Darstellung Punkte
+view_hidden_legend_level#:#Visibility of competencies
+view_hidden_legend_level_info#:#Number of displayed competencies within the Graph legend
+x_scale_title#:#Title x-Axis
+y_scale_title#:#Title y-Axis
