@@ -18,7 +18,7 @@ Start at your ILIAS root directory
 ```bash
 mkdir -p Customizing/global/plugins/Services/COPage/PageComponent/
 cd Customizing/global/plugins/Services/COPage/PageComponent/
-git clone https://gitlab.kroepelin-projekte.de/kpg/SurveyDataGraphs.git
+git clone https://github.com/kpgilias/SurveyDataGraphs.git
 ```
 Install, activate the plugin in the ILIAS Plugin Administration
 
