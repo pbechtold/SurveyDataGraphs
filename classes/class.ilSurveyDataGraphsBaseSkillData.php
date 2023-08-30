@@ -174,26 +174,30 @@ class ilSurveyDataGraphsBaseSkillData
     {
         $result = [];
         $colors = $this->digikosStyleColors();
-
         for ($i = 0; $i < $a_number; $i++) {
-            $color = array_rand($colors);
-            $result[] = $colors[$color];
+            foreach ($colors as $color){
+                $result[] = $color;
+            }
         }
-
         $this->colors = $result;
     }
 
     private function digikosStyleColors(): array
     {
         return [
+            '#E69A81',
+            '#D5573D',
             '#EE8002',
             '#DEBE3B',
             '#C2CB8C',
             '#53B8CA',
+            '#95B5C7',
+            '#466D86',
             '#008581',
             '#C4E0D8',
             '#A4A3B4',
             '#69687F',
+            '#A7A6A0',
             '#A779A0',
             '#B2546E',
         ];
