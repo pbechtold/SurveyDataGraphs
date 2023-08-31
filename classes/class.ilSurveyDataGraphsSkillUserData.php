@@ -188,7 +188,7 @@ class ilSurveyDataGraphsSkillUserData
                             "questions" => $count_q,
                             "answers" => 0,
                             "points" => 'NaN',
-                            "points_answer" => 0,
+                            "points_answer" => 'NaN',
                             "level_title" => "ohne Wertung",
                             "level" => 'NaN',
                         ];
