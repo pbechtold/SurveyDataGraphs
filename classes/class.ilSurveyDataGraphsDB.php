@@ -127,7 +127,7 @@ class ilSurveyDataGraphsDB
         }
         return $result;
     }
-
+    
     public function getBaseSkillAnswers(int $a_obj_id, int $a_base_skill_id): array
     {
         $sql = sprintf(
@@ -137,11 +137,11 @@ class ilSurveyDataGraphsDB
             "WHERE obj_fi = %s AND base_skill_id = %s ".
             "AND active_fi = (SELECT finished_id FROM svy_finished ".
             "JOIN svy_svy ON survey_fi = survey_id ".
-            "WHERE obj_fi = %s ".
+            "WHERE user_fi = %s ".
             "ORDER BY svy_finished.tstamp DESC LIMIT 1) ",
             $this->ilDB->quote($a_obj_id, "int"),
             $this->ilDB->quote($a_base_skill_id, "int"),
-            $this->ilDB->quote($a_obj_id, "int")
+            $this->ilDB->quote($this->user_id, "int")
         );
         $query = $this->ilDB->query($sql);
 
