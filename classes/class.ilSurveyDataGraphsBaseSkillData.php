@@ -49,8 +49,6 @@ class ilSurveyDataGraphsBaseSkillData
             $svy_skill_obj = new ilSurveySkill($obj_survey);
             $base_skill_item = $svy_skill_obj->getAllAssignedSkillsAsOptions();
             ksort($base_skill_item, SORT_NUMERIC );
-            $user_results = $obj_survey->getAllRelations();
-            $user_results = $obj_survey->getAppraiseesData();
 
             if(empty($base_skill_item)){
                 return " Ref_Id: " . $ref_id . " has no competencies!";
@@ -74,12 +72,6 @@ class ilSurveyDataGraphsBaseSkillData
                         $ids = explode(":", $key);
                         $skl_id = intval($ids[0]);
                         $tref_id = intval($ids[1]);
-//                        $questions = [];
-//                        foreach ($obj_survey->getSurveyQuestions(true) as $question) {
-//                            if($question['questiontype_fi'] == 2){
-//                                $questions[$question['question_id']] = $question;
-//                            }
-//                        }
                         $lvl_data = $this->dic->skills()->internal()->repo()->getLevelRepo()->getLevelData($skl_id);
                         if(!empty($lvl_data)){
                             $level_values[] = count($lvl_data);
@@ -128,9 +120,6 @@ class ilSurveyDataGraphsBaseSkillData
 
         $this->setColors(count($original_base_skill));
         $this->max_level_score = max($level_values);
-//        $evaluation = new ilSurveyEvaluationResults();
-
-
 
         return true;
     }

@@ -413,5 +413,4 @@ class ilSurveyDataGraphsPluginGUI extends ilPageComponentPluginGUI
         $form = $this->initColorForm();
         $tpl->setContent($form->getHTML());
     }
-
 }

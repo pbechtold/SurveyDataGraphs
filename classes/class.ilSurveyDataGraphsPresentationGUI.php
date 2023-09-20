@@ -139,11 +139,11 @@ class ilSurveyDataGraphsPresentationGUI
     private function getChartScaleIndex(): int
     {
         $result = 0;
-        if ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === 'view_scale_setting_option_level'){
+        if ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === ilSurveyDataGraphsPluginGUI::VIEW_SCALE_SETTING_OPTION_LEVEL){
             $result = $this->data->getMAXQuestLevel();
-        }elseif ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === 'view_scale_setting_option_points'){
+        }elseif ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === ilSurveyDataGraphsPluginGUI::VIEW_SCALE_SETTING_OPTION_POINTS){
             $result = $this->data->getMAXQuestValue();
-        }elseif ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === 'view_scale_setting_option_points_total'){
+        }elseif ($this->properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SCALE_SETTING_OPTION] === ilSurveyDataGraphsPluginGUI::VIEW_SCALE_SETTING_OPTION_POINTS_TOTAL){
             $result = $this->data->getMAXQuestTotalValue();
         }
         return $result;
@@ -192,11 +192,11 @@ class ilSurveyDataGraphsPresentationGUI
                 ->withContent(
                     $ui_factory->listing()->descriptive(
                         array(
-                            $record['level_title'] => $record['img'] . $record['description'], // todo lang_variable
+                            $record['level_title'] => $record['img'] . $record['description'],
                         )
                     )
                 )
-                ->withFurtherFieldsHeadline("<strong>" . "Empfohlene Lernmaterialien" . "</strong>") // todo lang_variable
+                ->withFurtherFieldsHeadline("<strong>" . "Empfohlene Lernmaterialien" . "</strong>")
                 ->withFurtherFields(array("" => $environment['skill_result']($record['links'])));
         };
 
