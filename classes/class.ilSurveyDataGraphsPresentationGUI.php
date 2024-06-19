@@ -7,9 +7,9 @@ require_once __DIR__ . "/../vendor/autoload.php";
 
 class ilSurveyDataGraphsPresentationGUI
 {
-    const SI_RESULT_ID_HEADER = "si_result_id_header";
-    const SI_RESULT_DATE_HEADER = "si_result_date_header";
-    const SI_RESULT_ANSWERED_HEADER = "si_result_answered_header";
+    public const SI_RESULT_ID_HEADER = "si_result_id_header";
+    public const SI_RESULT_DATE_HEADER = "si_result_date_header";
+    public const SI_RESULT_ANSWERED_HEADER = "si_result_answered_header";
     private mixed $plugin;
     private static int $id_counter = 0;
     private mixed $properties;

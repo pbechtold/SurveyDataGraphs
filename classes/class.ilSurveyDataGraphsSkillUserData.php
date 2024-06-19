@@ -25,15 +25,12 @@ class ilSurveyDataGraphsSkillUserData
     private string $y_scale_title;
     private mixed $thresholds;
     private mixed $max_level_value;
-    private ilLogger $logger;
 
     public function __construct(array $a_properties){
 
         global $DIC;
         $this->dic = $DIC;
-
-        $this->logger = ilLoggerFactory::getLogger('surveydatagraphs');
-
+        
         $this->base_skills = json_decode($a_properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SI_SKILLDATA], true);
         $this->level_data = json_decode($a_properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_LEVELDATA], true);
         $this->colors = json_decode($a_properties[ilSurveyDataGraphsPluginGUI::EDIT_CONF_SI_COLOR], true);
@@ -197,8 +194,6 @@ class ilSurveyDataGraphsSkillUserData
                 }
             }
         }
-        $this->logger->info(sprintf("getSkillEvaluationForSvyObjects() 200: "));
-        $this->logger->dump($result);
         return $result;
     }
     private function getChartRunData() : array
@@ -226,8 +221,6 @@ class ilSurveyDataGraphsSkillUserData
     }
     public function getChartData() : array
     {
-        $this->logger->info(sprintf("getChartData() 229: "));
-        $this->logger->dump($this->getChartDSData());
         return [
             "chart_title" => $this->chart_title,
             "chart_type" => count($this->obj_ids) === 1 ? 'bar' : 'line',

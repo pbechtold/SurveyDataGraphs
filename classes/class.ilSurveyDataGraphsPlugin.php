@@ -9,15 +9,6 @@ class ilSurveyDataGraphsPlugin extends ilPageComponentPlugin
         return "SurveyDataGraphs";
     }
 
-    public function isValidParentType(string $a_type): bool
-    {
-        if (in_array($a_type, array("lm", "wpg", "cat")))
-        {
-            return true;
-        }
-        return false;
-    }
-
     public function getCssFiles($a_mode) :array
     {
         return array("css/surveydatagraphs.css");
@@ -26,5 +17,10 @@ class ilSurveyDataGraphsPlugin extends ilPageComponentPlugin
     public function getJavascriptFiles(string $a_mode) : array
     {
         return array("js/chart.min.js");
+    }
+    
+    public function isValidParentType(string $a_type): bool
+    {
+        return true;
     }
 }
